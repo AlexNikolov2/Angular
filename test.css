@@ -1,0 +1,35 @@
+body{
+    font-family: Georgia, serif;
+    background: rgb(238, 238, 238);
+}
+.viewport{
+    background: rgb(255, 255, 255);
+    max-width: 500px;
+    margin: 200px;
+    border-radius: 5px;
+    position: relative;
+}
+.viewport img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+}
+.main-card h3, .main-card p{
+    margin-left: 25px;
+}
+.main-card{
+    padding-top: 340px;
+}
+.btn-container {
+    text-align: right;
+}
+
+.btn-container button {
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background: rgb(0, 153, 0);
+    font-size: 17px;
+}

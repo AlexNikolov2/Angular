@@ -1,5 +1,5 @@
-function mathCalc(a,b){
-    let result = a * b +`${a + b}`;
-    console.log(result);
+function mathCalc(a,b,c){
+    const result = a * (b + c);
+    console.log(result)
 }
-result(7, 3)
+mathCalc(1,2,3)
