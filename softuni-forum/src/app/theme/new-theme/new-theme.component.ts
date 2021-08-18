@@ -6,7 +6,7 @@ import { ContentService } from 'src/app/content.service';
 @Component({
   selector: 'softuni-new-theme',
   templateUrl: './new-theme.component.html',
-  styleUrls: ['./new-theme.component.scss']
+  styleUrls: ['./new-theme.component.css']
 })
 export class NewThemeComponent {
 

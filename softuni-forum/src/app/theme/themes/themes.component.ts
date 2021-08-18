@@ -7,7 +7,7 @@ import { UserService } from 'src/app/user/user.service';
 @Component({
   selector: 'app-theme',
   templateUrl: './themes.component.html',
-  styleUrls: ['./themes.component.scss']
+  styleUrls: ['./themes.component.css']
 })
 export class ThemesComponent {
 
