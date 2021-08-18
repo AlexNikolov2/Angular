@@ -9,6 +9,9 @@ import { UserService } from './user/user.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   recentPosts: IPost[] | undefined;
 
   toggleTemplate = false;

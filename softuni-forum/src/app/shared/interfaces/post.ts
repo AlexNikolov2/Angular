@@ -1,5 +1,5 @@
-export interface IPost{
-    likes: string[]
+export interface IPost {
+  likes: string[]
   _id: string;
   text: string;
   userId: {
@@ -13,8 +13,8 @@ export interface IPost{
     created_at: string;
     updatedAt: string;
     __v: 0
-},
-themeId: {
+  },
+  themeId: {
     subscribers: string[],
     posts: string[],
     _id: string;
