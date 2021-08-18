@@ -6,6 +6,7 @@ import { ThemeRoutingModule } from './theme-routing.module';
 import { AsideComponent } from './aside/aside.component';
 import { SharedModule } from '../shared/shared.module';
 import { ThemeComponent } from './theme/theme.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ThemeComponent } from './theme/theme.component';
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
     ThemeRoutingModule
   ]
 })

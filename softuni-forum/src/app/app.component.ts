@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContentService } from './content.service';
 import { IPost } from './shared/interfaces';
+import { UserService } from './user/user.service';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,17 @@ export class AppComponent {
 
   toggleTemplate = false;
 
-  constructor(private contentService: ContentService){
-    this.fetchRecentPosts();
+  get isAuthenticating(): boolean {
+    return this.userService.user === undefined;
   }
 
-  fetchRecentPosts(): void {
-    this.recentPosts = undefined;
-    this.contentService.loadPosts(5).subscribe(posts => this.recentPosts = posts);
+  constructor(
+    private userService: UserService
+  ) {
+    this.userService.getProfileInfo().subscribe({
+      error: () => {
+        this.userService.user = null;
+      }
+    })
   }
 }
