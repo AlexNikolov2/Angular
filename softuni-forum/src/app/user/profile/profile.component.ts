@@ -5,7 +5,7 @@ import { UserService } from '../user.service';
 @Component({
   selector: 'softuni-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss']
+  styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
 

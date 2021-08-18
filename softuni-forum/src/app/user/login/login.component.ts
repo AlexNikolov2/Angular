@@ -9,7 +9,7 @@ import { emailValidator } from 'src/app/shared/validators';
 @Component({
   selector: 'softuni-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
 

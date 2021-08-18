@@ -1,35 +1,34 @@
 <header>
     <div class="mini-navbar-wrap">
-        <div class="logo-wrap">
-            <p class="logo"><span class="logo" routerlink="/">SoftUni Forum</span></p>
-        </div>
-        <div class="mini-navbar">
-            <ul *ngIf="!isLogged">
-                <li>
-                    <a routerlink href="/login">Login</a>
-                </li>
-                <li>
-                    <a routerlink href="/register">Register</a>
-                </li>
-            </ul>
-            <ul *ngIf="isLogged">
-                <li routerLink="/profile">{{firstName}}'s profile</li>
-                <li (click)="logout()">Logout</li>
-              </ul>
-        </div>
+      <div class="logo-wrap">
+        <p class="logo"><span class="logo" routerLink="/">SoftUni Forum</span></p>
+      </div>
+      <div class="mini-navbar">
+        <ul *ngIf="!isLogged">
+          <li>
+            <a routerLink="/login">Login</a>
+          </li>
+          <li>
+            <a routerLink="/register">Register</a>
+          </li>
+        </ul>
+        <ul *ngIf="isLogged">
+          <li routerLink="/profile">{{username}}'s profile</li>
+          <li (click)="logout()">Logout</li>
+        </ul>
+      </div>
     </div>
     <nav>
-        <ul>
-            <li>
-                <a routerlink href="/home">Home</a>
-            </li>
-            <li>
-                <a routerlink href="/themes">Themes</a>
-            </li>
-            <li>
-                <a routerlink href="/add-theme">New Theme</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a routerLink="/home">Home</a>
+        </li>
+        <li>
+          <a routerLink="/themes">Themes</a>
+        </li>
+        <li>
+          <a routerLink="/add-theme">New Theme</a>
+        </li>
+      </ul>
     </nav>
-
-</header>
+  </header>
